@@ -16,7 +16,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wl,-q -Wall -O2 -std=gnu99 -nostdlib")
 add_executable(volctl src/main.c)
 target_link_libraries(volctl
   SceLibKernel_stub
-  SceThreadmgr_stub
+  SceKernelThreadMgr_stub
   SceCtrl_stub
   SceAVConfig_stub
 )
