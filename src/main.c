@@ -52,7 +52,7 @@ static int vol_thread(SceSize args, void *argp)
             continue;
         }
 
-        uint64_t now = sceKernelGetProcessTimeWide();
+        uint64_t now = sceKernelGetSystemTimeWide();
         if ((unsigned int)dir != prev_dir) {
             change_volume(dir);
             prev_dir = (unsigned int)dir;
